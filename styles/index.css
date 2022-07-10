@@ -1,0 +1,138 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Quicksand:wght@400;500;600;800&display=swap");
+* {
+  font-family: "Nunito";
+}
+
+.bg-pryred {
+  background-color: #d81935;
+}
+
+.bg-secred {
+  background-color: #fbdce0;
+}
+
+.font-sec {
+  font-family: "Quicksand";
+  font-weight: 600;
+}
+
+.bolden {
+  font-weight: 800 !important;
+}
+
+.text-pryblue {
+  color: #161c2d;
+}
+
+.bg-pryblue {
+  background-color: #161c2d;
+}
+
+.text-prygreen {
+  color: #128345;
+}
+
+.border-pryblue {
+  border-color: #161c2d;
+}
+
+.bg-prygreen {
+  background-color: #128345;
+}
+.text-pryred {
+  color: #d81935;
+}
+
+.text-secred {
+  color: #fbdce0;
+}
+
+.w-logo {
+  width: 160px;
+}
+
+.w-logo-sm {
+  width: 160px;
+}
+.btn {
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  outline: none;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  background-color: #fbdce0 !important;
+  border: 1px solid #fbdce0 !important;
+  box-shadow: 0 3px 5px 0 rgb(216 25 53 / 30%);
+  color: #d81935 !important;
+}
+
+.btn-sec {
+  background-color: #d81935 !important;
+  border: 1px solid #d81935 !important;
+  box-shadow: 0 3px 5px 0 rgb(216 25 53 / 30%);
+  color: #fbdce0 !important;
+}
+
+@media (min-width: 640px) {
+  .w-logo {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}
+
+.bg-bottom {
+  background-position: bottom;
+}
+
+.mt-50 {
+  padding-top: 75px;
+}
+
+.svg-style {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-miterlimit: 3;
+}
+
+.w-35 {
+  width: 45%;
+}
+
+.mb-10 {
+  margin-bottom: 2rem;
+}
+
+.px-10 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.w-8-10 {
+  width: 80%;
+}
+
+.maxh {
+  max-height: 100vh;
+  overflow-y: scroll;
+}
+
+@media (max-width: 1000px) {
+  .w-35 {
+    width: 100vw;
+    height: 100vh;
+  }
+}

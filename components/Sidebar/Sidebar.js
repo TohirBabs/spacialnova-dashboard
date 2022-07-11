@@ -177,7 +177,7 @@ export default function Sidebar() {
                 </Link>
               </li>
 
-              <li className="items-center mt-2">
+              {/* <li className="items-center mt-2">
                 <Link href="/admin/tables">
                   <a
                     href="#pablo"
@@ -221,6 +221,17 @@ export default function Sidebar() {
                       }
                     ></i>{" "}
                     Maps
+                  </a>
+                </Link>
+              </li> */}
+              <li className="items-center mt-2">
+                <Link href="/auth/book">
+                  <a
+                    href="#pablo"
+                    className=" py-3 font-bold block btn text-pryblue font-sec hover:text-blueGray-500"
+                  >
+                    <i className="fas fa-table mr-2 text-sm text-pryred"></i>{" "}
+                    Book Appointment
                   </a>
                 </Link>
               </li>

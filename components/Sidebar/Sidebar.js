@@ -298,25 +298,13 @@ export default function Sidebar() {
                 </Link>
               </li>
               <li className="items-center mt-2">
-                <Link href="/admin/settings">
+                <Link href="/">
                   <a
                     href="#pablo"
-                    className={
-                      " py-3 font-bold block " +
-                      (router.pathname.indexOf("/admin/settings") !== -1
-                        ? "btn btn-primary text-lightBlue-500 hover:text-lightBlue-600"
-                        : "btn text-pryblue font-sec hover:text-blueGray-500")
-                    }
+                    className=" py-3 font-bold block btn text-pryblue font-sec hover:text-blueGray-500"
                   >
-                    <i
-                      className={
-                        "fas fa-sign-out-alt mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/settings") !== -1
-                          ? ""
-                          : "text-pryred")
-                      }
-                    ></i>{" "}
-                    Log out
+                    <i className="fas fa-sign-out-alt mr-2 text-sm "></i> Log
+                    out
                   </a>
                 </Link>
               </li>

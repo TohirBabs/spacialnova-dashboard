@@ -40,7 +40,7 @@ export default function CardStats({
               </div>
             </div>
           </div>
-          <p className="text-sm text-blueGray-400 mt-4">
+          {/* <p className="text-sm text-blueGray-400 mt-4">
             <span className={statPercentColor + " mr-2"}>
               <i
                 className={
@@ -54,7 +54,7 @@ export default function CardStats({
               {statPercent}%
             </span>
             <span className="whitespace-nowrap">{statDescripiron}</span>
-          </p>
+          </p> */}
         </div>
       </div>
     </>

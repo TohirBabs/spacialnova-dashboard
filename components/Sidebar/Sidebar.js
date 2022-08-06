@@ -120,25 +120,25 @@ export default function Sidebar() {
                 </Link>
               </li>
               <li className="items-center mt-2">
-                <Link href="/admin/settings">
+                <Link href="/admin/file-storage">
                   <a
-                    href="#pablo"
+                    href="#"
                     className={
                       " py-3 font-bold block " +
-                      (router.pathname.indexOf("/admin/marketplace") !== -1
+                      (router.pathname.indexOf("/admin/file-storage") !== -1
                         ? "btn btn-primary text-lightBlue-500 hover:text-lightBlue-600"
                         : " btn text-pryblue font-sec hover:text-blueGray-500")
                     }
                   >
                     <i
                       className={
-                        "fas fa-shopping-cart mr-2 text-sm " +
-                        (router.pathname.indexOf("/admin/marketplace") !== -1
+                        "fas fa-folder mr-2 text-sm " +
+                        (router.pathname.indexOf("/admin/file-storage") !== -1
                           ? ""
                           : "text-pryred")
                       }
                     ></i>{" "}
-                    Marketplace
+                    File Storage
                   </a>
                 </Link>
               </li>
@@ -161,11 +161,11 @@ export default function Sidebar() {
                           : "text-pryred")
                       }
                     ></i>{" "}
-                    Notification
+                    Notifications
                   </a>
                 </Link>
               </li>
-              {/* <li className="items-center mt-2">
+              <li className="items-center mt-2">
                 <Link href="/profile">
                   <a
                     href="#pablo"
@@ -175,9 +175,9 @@ export default function Sidebar() {
                     Profile
                   </a>
                 </Link>
-              </li> */}
+              </li>
 
-              {/* <li className="items-center mt-2">
+              <li className="items-center mt-2">
                 <Link href="/admin/tables">
                   <a
                     href="#pablo"
@@ -221,17 +221,6 @@ export default function Sidebar() {
                       }
                     ></i>{" "}
                     Maps
-                  </a>
-                </Link>
-              </li> */}
-              <li className="items-center mt-2">
-                <Link href="/auth/book">
-                  <a
-                    href="#pablo"
-                    className=" py-3 font-bold block btn text-pryblue font-sec hover:text-blueGray-500"
-                  >
-                    <i className="fas fa-table mr-2 text-sm text-pryred"></i>{" "}
-                    Book Appointment
                   </a>
                 </Link>
               </li>
@@ -309,13 +298,48 @@ export default function Sidebar() {
                 </Link>
               </li>
               <li className="items-center mt-2">
-                <Link href="/">
+                <Link href="/admin/settings">
                   <a
                     href="#pablo"
-                    className=" py-3 font-bold block btn text-pryblue font-sec hover:text-blueGray-500"
+                    className={
+                      " py-3 font-bold block " +
+                      (router.pathname.indexOf("/admin/settings") !== -1
+                        ? "btn btn-primary text-lightBlue-500 hover:text-lightBlue-600"
+                        : "btn text-pryblue font-sec hover:text-blueGray-500")
+                    }
                   >
-                    <i className="fas fa-sign-out-alt mr-2 text-sm "></i> Log
-                    out
+                    <i
+                      className={
+                        "fas fa-question-circle mr-2 text-sm " +
+                        (router.pathname.indexOf("/admin/settings") !== -1
+                          ? ""
+                          : "text-pryred")
+                      }
+                    ></i>{" "}
+                    Help
+                  </a>
+                </Link>
+              </li>
+              <li className="items-center mt-2">
+                <Link href="/admin/settings">
+                  <a
+                    href="#pablo"
+                    className={
+                      " py-3 font-bold block " +
+                      (router.pathname.indexOf("/admin/settings") !== -1
+                        ? "btn btn-primary text-lightBlue-500 hover:text-lightBlue-600"
+                        : "btn text-pryblue font-sec hover:text-blueGray-500")
+                    }
+                  >
+                    <i
+                      className={
+                        "fas fa-sign-out-alt mr-2 text-sm " +
+                        (router.pathname.indexOf("/admin/settings") !== -1
+                          ? ""
+                          : "text-pryred")
+                      }
+                    ></i>{" "}
+                    Log out
                   </a>
                 </Link>
               </li>

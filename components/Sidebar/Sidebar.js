@@ -121,8 +121,7 @@ export default function Sidebar() {
               </li>
               <li className="items-center mt-2">
                 <Link href="/admin/file-storage">
-                  <a
-                    href="#"
+                  <div
                     className={
                       " py-3 font-bold block " +
                       (router.pathname.indexOf("/admin/file-storage") !== -1
@@ -139,7 +138,7 @@ export default function Sidebar() {
                       }
                     ></i>{" "}
                     File Storage
-                  </a>
+                  </div>
                 </Link>
               </li>
               <li className="items-center mt-2">
